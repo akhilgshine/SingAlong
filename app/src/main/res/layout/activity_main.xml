@@ -37,6 +37,13 @@
         android:gravity="center"
         android:background="@color/colorWhite"
         android:layout_weight="1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contentParent"
+        android:gravity="center"
+        android:background="@color/colorWhite"
+       >
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -56,12 +63,23 @@
             android:layout_marginTop="60dp"
             android:textColor="@color/colorWhite"
             android:textStyle="bold"
+            android:id="@+id/singAlong"
             android:background="@drawable/black_curve"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/arrowButton"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/arrow"/>
         <TextView
             android:layout_width="220dp"
             android:layout_height="50dp"
             android:text="Karaoke"
             android:gravity="center"
+            android:id="@+id/karaoke"
             android:textSize="20sp"
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
@@ -71,6 +89,42 @@
             android:background="@drawable/black_curve"/>
 
 
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/listParent"
+        android:background="@color/colorWhite"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"/>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/transcolorWhitedark"
+            android:layout_height="match_parent"/>
+
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/list_item"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/arrowLeft"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/left_arrow"/>
+
+    </RelativeLayout>
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
