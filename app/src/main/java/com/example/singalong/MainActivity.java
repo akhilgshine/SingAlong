@@ -31,7 +31,10 @@ public class MainActivity extends AppCompatActivity {
     ImageView rightArrow, leftArrow;
     RelativeLayout listParent,contentParent;
 
-    String ARrayList[] = {"Info", "Marae Culture", "Marae Temple", "Marae Carvings", "Topic3"};
+    String ArrayList[] = {"Information about Te Kōpu Mānia o Kirikiriroa", "Te Kōpu Mānia o Kirikiriroa (Wintec Marae)",
+                          "Waka Maumahara (Memorial Pillar)", "Pou Whakarae (Pillars)", "Pou-tūā-rangi (Internal Wharenui Post)",
+                          "Pou-tūā-rongo - Tawhaki (Internal Wharenui Post)", "Tomokanga ( Gateway Entrance)", "Pare and Whakawae (Doorway Lintels)",
+                          "Kōrupe (Window Lintel)"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         listOfItem = findViewById(R.id.list_item);
         listParent = findViewById(R.id.listParent);
         contentParent = findViewById(R.id.contentParent);
-        DetailsAdapter adapter = new DetailsAdapter(this, ARrayList);
+        DetailsAdapter adapter = new DetailsAdapter(this, ArrayList);
         listOfItem.setAdapter(adapter);
 
 
@@ -129,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (position == 0) {
                 // if section header
-                tvSectionTitle.setTextSize(60f);
+                tvSectionTitle.setTextSize(36f);
 
             } else {
                 // if item

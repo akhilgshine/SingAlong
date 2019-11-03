@@ -3,14 +3,15 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center">
+
     <TextView
+        android:id="@+id/itemText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/itemText"
-        android:textSize="26sp"
-        android:padding="10dp"
-        android:textStyle="bold"
         android:gravity="center"
-        android:textColor="@color/colorGrey"/>
+        android:padding="10dp"
+        android:textColor="@color/colorGrey"
+        android:textSize="26sp"
+        android:textStyle="bold" />
 
 </LinearLayout>
