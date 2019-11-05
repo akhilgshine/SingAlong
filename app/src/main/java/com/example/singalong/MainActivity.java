@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         singAlong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent singALongInent = new Intent(MainActivity.this, SingALongScreen.class);
+                Intent singALongInent = new Intent(MainActivity.this, SingAlong.class);
                 startActivity(singALongInent);
 
             }
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         karaoke.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent karaoke = new Intent(MainActivity.this, Karaoke.class);
+                Intent karaoke = new Intent(MainActivity.this, Karoke.class);
                 startActivity(karaoke);
 
             }
@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(karaoke);
 
                     } else if (pos == 4) {
-                        Intent karaoke = new Intent(MainActivity.this, Karaoke.class);
+                        Intent karaoke = new Intent(MainActivity.this, Karoke.class);
                         startActivity(karaoke);
 
                     }
