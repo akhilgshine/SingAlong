@@ -5,9 +5,11 @@
     <color name="colorAccent">#D81B60</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlack">#000000</color>
-    <color name="colorPeach">#EC5548</color>
+    <color name="colorPeach">#FFC107</color>
     <color name="colorGrey">#777272</color>
     <color name="transcolorWhite">#90FFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+
     <color name="transcolorWhitedark">#E6FFFFFF</color>
 
 </resources>

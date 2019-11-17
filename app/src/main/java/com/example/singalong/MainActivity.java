@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
@@ -26,30 +29,64 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView singAlong, karaoke;
+    TextView singAlong, karaoke,langText;
+    AppPreferences prefs;
     ListView listOfItem;
-    ImageView rightArrow, leftArrow;
+    ImageView rightArrow, leftArrow,langToggle,navButton;
     RelativeLayout listParent,contentParent;
-
-    String ArrayList[] = {"Information about Te Kōpu Mānia o Kirikiriroa", "Te Kōpu Mānia o Kirikiriroa (Wintec Marae)",
-                          "Waka Maumahara (Memorial Pillar)", "Pou Whakarae (Pillars)", "Pou-tūā-rangi (Internal Wharenui Post)",
-                          "Pou-tūā-rongo - Tawhaki (Internal Wharenui Post)", "Tomokanga ( Gateway Entrance)", "Pare and Whakawae (Doorway Lintels)",
-                          "Kōrupe (Window Lintel)"};
-
+    boolean togselected=false;
+    String titleArray[]={};
+    String contentsArray[]={};
+    boolean openClose=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
-        singAlong = findViewById(R.id.singAlong);
-        karaoke = findViewById(R.id.karaoke);
-        leftArrow = findViewById(R.id.arrowLeft);
-        rightArrow = findViewById(R.id.arrowButton);
-        listOfItem = findViewById(R.id.list_item);
-        listParent = findViewById(R.id.listParent);
-        contentParent = findViewById(R.id.contentParent);
-        DetailsAdapter adapter = new DetailsAdapter(this, ArrayList);
-        listOfItem.setAdapter(adapter);
+        setContentView(R.layout.activity_main);
+        init();
+        if(prefs.contains("Language")) {
+            langText.setText(prefs.getData("Language"));
+            if(prefs.getData("Language").equals("English"))
+            {
+                langToggle.setImageResource(R.drawable.tog_off);
+                togselected=false;
+                setLocale("en");
+            }
+            else
+            {
+                langToggle.setImageResource(R.drawable.tog_on);
+                togselected=true;
+                setLocale("mi");
+
+            }
+        }
+        langToggle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(togselected)
+                {
+                    prefs.SaveData("Language","English");
+                    prefs.SaveData("lanCode","en");
+                    langText.setText("English");
+                    langToggle.setImageResource(R.drawable.tog_off);
+                    togselected=false;
+                    setLocale("en");
+                   // init();
+                }
+                else
+                {
+                    prefs.SaveData("Language","Maori");
+                    prefs.SaveData("lanCode","mi");
+                    langText.setText("Maori");
+                    langToggle.setImageResource(R.drawable.tog_on);
+                    togselected=true;
+                    setLocale("mi");
+                   // init();
+
+
+                }
+            }
+        });
 
 
         singAlong.setOnClickListener(new View.OnClickListener() {
@@ -82,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 listParent.animate().translationX(width);
+                openClose=false;
             }
         });
         rightArrow.setOnClickListener(new View.OnClickListener() {
@@ -89,8 +127,54 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 listParent.setVisibility(View.VISIBLE);
                 listParent.animate().translationX(0);
+                openClose=true;
             }
         });
+
+        navButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!openClose)
+                {
+                    listParent.setVisibility(View.VISIBLE);
+                    listParent.animate().translationX(0);
+                    openClose=true;
+                }
+                else
+                {
+                    listParent.animate().translationX(width);
+                    openClose=false;
+                }
+
+            }
+        });
+
+    }
+
+    public void init()
+    {
+        singAlong = findViewById(R.id.singAlong);
+        karaoke = findViewById(R.id.karaoke);
+        leftArrow = findViewById(R.id.arrowLeft);
+        rightArrow = findViewById(R.id.arrowButton);
+        listOfItem = findViewById(R.id.list_item);
+        listParent = findViewById(R.id.listParent);
+        langToggle = findViewById(R.id.langToggle);
+        contentParent = findViewById(R.id.contentParent);
+        langText = findViewById(R.id.langText);
+        navButton = findViewById(R.id.navButton);
+        prefs=new AppPreferences(this,getResources().getString(R.string.app_name));
+
+        singAlong.setText(R.string.sing_along);
+        karaoke.setText(R.string.karaoke);
+
+        String langcode=prefs.getData("lanCode");
+        titleArray=getResources().getStringArray(R.array.title_array);
+        contentsArray=getResources().getStringArray(R.array.content_array);
+        DetailsAdapter adapter = new DetailsAdapter(this, titleArray);
+        listOfItem.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
+
     }
 
     public class DetailsAdapter extends BaseAdapter {
@@ -132,11 +216,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (position == 0) {
                 // if section header
-                tvSectionTitle.setTextSize(36f);
-
-            } else {
-                // if item
-
+                tvSectionTitle.setTextSize(20f);
 
             }
             tvSectionTitle.setTag(position);
@@ -144,23 +224,34 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     int pos = (int) tvSectionTitle.getTag();
-                    if (pos == 1) {
-                        Intent karaoke = new Intent(MainActivity.this, MaraeCulture.class);
-                        startActivity(karaoke);
+//                    if (pos == 1) {
+//                        Intent karaoke = new Intent(MainActivity.this, MaraeCulture.class);
+//                        startActivity(karaoke);
+//
+//                    } else if (pos == 2) {
+//                        Intent karaoke = new Intent(MainActivity.this, MaraeTemple.class);
+//                        startActivity(karaoke);
+//
+//                    } else if (pos == 3) {
+//                        Intent karaoke = new Intent(MainActivity.this, MaraeCarvings.class);
+//                        startActivity(karaoke);
+//
+//                    } else if (pos == 4) {
+//
 
-                    } else if (pos == 2) {
-                        Intent karaoke = new Intent(MainActivity.this, MaraeTemple.class);
-                        startActivity(karaoke);
-
-                    } else if (pos == 3) {
-                        Intent karaoke = new Intent(MainActivity.this, MaraeCarvings.class);
-                        startActivity(karaoke);
-
-                    } else if (pos == 4) {
-                        Intent karaoke = new Intent(MainActivity.this, Karoke.class);
-                        startActivity(karaoke);
-
+                    if(pos!=0)
+                    {
+                        Intent nextScreen = new Intent(MainActivity.this, MaraeCulture.class);
+                        nextScreen.putExtra("title",titleArray[pos]);
+                        nextScreen.putExtra("content",contentsArray[pos]);
+                        startActivity(nextScreen);
                     }
+
+                    else {
+                        Intent karaoke = new Intent(MainActivity.this, Karoke.class);
+//                        startActivity(karaoke);
+                    }
+
 
 
                 }
@@ -174,4 +265,15 @@ public class MainActivity extends AppCompatActivity {
          */
 
     }
+
+    public void setLocale(String lang) {
+        Locale locale = new Locale(lang);
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.locale = locale;
+        getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+        init();
+
+    }
+
 }

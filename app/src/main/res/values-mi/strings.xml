@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SingAlong</string>
+    <string name="sing_along">Waiata haere </string>
+    <string name="karaoke">Kararehe</string>
+    <string-array name="title_array">
+        <item>Information about Te Kōpu Mānia o Kirikiriroa</item>
+        <item>Te Kōpu Mānia o Kirikiriroa (Wintec Marae)</item>
+        <item>Waka Maumahara (Memorial Pillar)</item>
+        <item>Pou Whakarae (Pillars)</item>
+        <item>Pou-tūā-rangi (Internal Wharenui Post)</item>
+        <item>Pou-tūā-rongo - Tawhaki (Internal Wharenui Post)</item>
+        <item>Tomokanga ( Gateway Entrance)</item>
+        <item>Pare and Whakawae (Doorway Lintels)</item>
+        <item>Kōrupe (Window Lintel)</item>
+    </string-array>
+
+    <string-array name="content_array">
+        <item> </item>
+        <item>The marae complex takes its name from an area famous for its rich, fertile lands and gardens that linked the network of Waikato sub-tribes (hapū) who lived along the banks of the Waikato River.To learn more about the marae, click here. </item>
+        <item>On the marae courtyard is 7.5 metre pillar in the form of a waka. \n \n This is the waka maumahara (memorial pillar) which faces Taupiri mountain. At the top of the waka maumahara stands the native kaahu (hawk) representing the Māori Queen Dame Te Ata irangikaahu. \n \n Below this are five niho taniwha, a pattern representing the five Māori kings. \n
+            \n Learning and knowledge are symbolised with manaia and matakupenga patterns through the centre, with the pūhoro design representing the Waikato River. </item>
+        <item>Near the waka maumahara (memorial pillar ) are seven smaller pou whakarae(pillars) which symbolise the star cluster Matariki (Pleiades). \n \n This star cluster is significant to Māori and Tainui culture. </item>
+        <item>The pou-tūā-rangi (internal wharenui post) near the entrance represents Wintec values. \n \n • Mahi tahi - Working together \n \n • Whakaaro whanui - Challenge and innovation \n
+   \n • Manaaki tangata - Customer focus \n \n • Kia Tika - Taking ownership \n \n • Kia tupu, kia hua - Improvement and opportunity \n \n • Whakamana i te tangata - Valuing people \n
+            \n It has been carved in totara from a tree which used to stand on Wintec city campus. Behind the pou-tua-rangi is a tukutuku panel from the original Wintec wharenui, Te Kākano a te Kaahu.</item>
+        <item>Located on the back wall of the wharenui the pou-tūā-rongo is a carving of Tāwhaki who received the baskets of knowledge (ngā kete wānanga). \n \n
+            Tāwhaki is featured looking towards the doorway and the world of light. This was also carved in tōtara from a tree which use to stand on Wintec’s city campus. </item>
+        <item>The entrance designs welcome people from around the world of Wintec. \n \n The sub-tribes (hapū) of this area are shown welcoming visitors onto the marae in a central carving at the entrance. \n \n Mātauranga Māori and part of the creation story according to Tainui are also represented in the carvings.</item>
+        <item>Above the wharenui pare (doorway) are three figures ngā kete wānanga representing the three baskets of knowledge. Part of the creation story of Tainui is also told in the designs. \n \n Manaia and takarangi patterns symbolise growth and development. The textured ngao matariki pattern on the sides of the doorway (whakawae) represents the welcoming of the cultures and peoples of the world. </item>
+
+        <item>The taniwha Tuheitia is carved on the window lintel (kōrupe) above the front window of Te Kākano a te Kaahu, along with ngao matariki and manaia designs. Tuheitia holds guardianship of the Waipā river and was regarded with awe and respect. </item>
+    </string-array>
+</resources>
