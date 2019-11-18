@@ -3,9 +3,16 @@
     <string name="app_name">SingAlong</string>
     <string name="sing_along">Waiata haere </string>
     <string name="karaoke">Kararehe</string>
+    <string name="about_us">Mo tatou </string>
+    <string name="app_version">App putanga</string>
+    <string name="_2019_onetrickponies">2019 OneTrickPonies Inc.\n This app is property of the Waikato Institute of Technology</string>
+    <string name="about_data">Founded in 2019, OneTrickPonies aspires to give all of our clients a fantastic app. Our philosophy is that every customer should have an app that will be a useful tool in their workplace or even their day to day lives. \n \n Whether you’re a large fortune 500 company, a small start-up, or even just one person with a dream, we will fulfill the requests, big or small.</string>
+
     <string-array name="title_array">
         <item>Information about Te Kōpu Mānia o Kirikiriroa</item>
         <item>Te Kōpu Mānia o Kirikiriroa (Wintec Marae)</item>
+        <item> Marae Carvings</item>
+
         <item>Waka Maumahara (Memorial Pillar)</item>
         <item>Pou Whakarae (Pillars)</item>
         <item>Pou-tūā-rangi (Internal Wharenui Post)</item>
@@ -17,7 +24,8 @@
 
     <string-array name="content_array">
         <item> </item>
-        <item>The marae complex takes its name from an area famous for its rich, fertile lands and gardens that linked the network of Waikato sub-tribes (hapū) who lived along the banks of the Waikato River.To learn more about the marae, click here. </item>
+        <item> <![CDATA[<p>The marae complex takes its name from an area famous for its rich, fertile lands and gardens that linked the network of Waikato sub-tribes (hapū) who lived along the banks of the Waikato River.To learn more about the marae,<a href="https://www.wintec.ac.nz/about-wintec/m%C4%81ori-and-pasifika/wintec-marae"> click here. </a> </p>]]> </item>
+        <item> <![CDATA[<p>Wintec’s marae features an array of carvings, designed and created by Tainui master carver Warren McGrath, Ngāti Raukawa, a former Wintec student.To learn more about the carvings,<a href="https://www.wintec.ac.nz/about-wintec/m%C4%81ori-and-pasifika/wintec-marae/marae-carvings"> click here. </a> </p>]]> </item>
         <item>On the marae courtyard is 7.5 metre pillar in the form of a waka. \n \n This is the waka maumahara (memorial pillar) which faces Taupiri mountain. At the top of the waka maumahara stands the native kaahu (hawk) representing the Māori Queen Dame Te Ata irangikaahu. \n \n Below this are five niho taniwha, a pattern representing the five Māori kings. \n
             \n Learning and knowledge are symbolised with manaia and matakupenga patterns through the centre, with the pūhoro design representing the Waikato River. </item>
         <item>Near the waka maumahara (memorial pillar ) are seven smaller pou whakarae(pillars) which symbolise the star cluster Matariki (Pleiades). \n \n This star cluster is significant to Māori and Tainui culture. </item>

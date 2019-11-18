@@ -29,10 +29,19 @@
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:background="@color/colorBlack"
+        android:background="@drawable/blackandwhite"
         android:gravity="center_vertical"
         android:layout_height="50dp">
 
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center|right"
+        android:id="@+id/langLayout"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
         <ImageView
             android:layout_width="50dp"
             android:src="@drawable/tog_off"
@@ -50,9 +59,9 @@
             android:layout_centerVertical="true"
             android:text="English"
             android:layout_alignParentRight="true"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/colorBlack"
             android:layout_height="wrap_content"/>
-    </RelativeLayout>
+    </LinearLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -151,7 +160,7 @@
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:background="@color/colorBlack"
+        android:background="@drawable/blackandwhite"
         android:gravity="center_vertical"
         android:layout_height="50dp"></RelativeLayout>
     <RelativeLayout

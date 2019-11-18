@@ -28,7 +28,11 @@
         <activity
             android:name=".MaraeCulture"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-<!--        <activity-->
+        <activity android:name=".AboutUs"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".AppVersion"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <!--        <activity-->
 <!--            android:name=".MaraeTemple"-->
 <!--            android:theme="@style/Theme.AppCompat.NoActionBar" />-->
     </application>

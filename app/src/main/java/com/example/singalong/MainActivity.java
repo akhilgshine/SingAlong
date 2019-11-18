@@ -10,6 +10,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
@@ -19,8 +20,10 @@ import android.widget.Filter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.PopupMenu;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONException;
 
@@ -134,18 +137,30 @@ public class MainActivity extends AppCompatActivity {
         navButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!openClose)
-                {
-                    listParent.setVisibility(View.VISIBLE);
-                    listParent.animate().translationX(0);
-                    openClose=true;
-                }
-                else
-                {
-                    listParent.animate().translationX(width);
-                    openClose=false;
-                }
+                //Creating the instance of PopupMenu
+                PopupMenu popup = new PopupMenu(MainActivity.this, navButton);
+                //Inflating the Popup using xml file
+                popup.getMenuInflater()
+                        .inflate(R.menu.popup, popup.getMenu());
 
+                //registering popup with OnMenuItemClickListener
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem item) {
+                        int id = item.getItemId();
+                        if(id ==  R.id.app_version){
+                            Intent intent = new Intent(getBaseContext(), AppVersion.class);
+                            startActivity(intent);
+
+                        }
+                        if(id ==  R.id.about_us){
+                            Intent intent = new Intent(getBaseContext(), AboutUs.class);
+                            startActivity(intent);
+                        }
+                        return true;
+                    }
+                });
+
+                popup.show(); //showing popup menu
             }
         });
 
@@ -224,35 +239,15 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     int pos = (int) tvSectionTitle.getTag();
-//                    if (pos == 1) {
-//                        Intent karaoke = new Intent(MainActivity.this, MaraeCulture.class);
-//                        startActivity(karaoke);
-//
-//                    } else if (pos == 2) {
-//                        Intent karaoke = new Intent(MainActivity.this, MaraeTemple.class);
-//                        startActivity(karaoke);
-//
-//                    } else if (pos == 3) {
-//                        Intent karaoke = new Intent(MainActivity.this, MaraeCarvings.class);
-//                        startActivity(karaoke);
-//
-//                    } else if (pos == 4) {
-//
 
                     if(pos!=0)
                     {
                         Intent nextScreen = new Intent(MainActivity.this, MaraeCulture.class);
                         nextScreen.putExtra("title",titleArray[pos]);
                         nextScreen.putExtra("content",contentsArray[pos]);
+                        nextScreen.putExtra("position",String.valueOf(pos));
                         startActivity(nextScreen);
                     }
-
-                    else {
-                        Intent karaoke = new Intent(MainActivity.this, Karoke.class);
-//                        startActivity(karaoke);
-                    }
-
-
 
                 }
             });
