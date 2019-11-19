@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SingAlong</string>
-    <string name="sing_along">Waiata haere </string>
-    <string name="karaoke">Kararehe</string>
+    <string name="sing_along">Waiatatia</string>
+    <string name="karaoke">Karaoke</string>
     <string name="about_us">Mo tatou </string>
     <string name="app_version">App putanga</string>
     <string name="_2019_onetrickponies">2019 OneTrickPonies Inc.\n This app is property of the Waikato Institute of Technology</string>
@@ -10,33 +10,52 @@
 
     <string-array name="title_array">
         <item>Information about Te Kōpu Mānia o Kirikiriroa</item>
-        <item>Te Kōpu Mānia o Kirikiriroa (Wintec Marae)</item>
-        <item> Marae Carvings</item>
+        <item>Te Kōpu Mānia o Kirikiriroa </item>
+        <item> Ko Ngā Whakairo o te Marae</item>
 
-        <item>Waka Maumahara (Memorial Pillar)</item>
-        <item>Pou Whakarae (Pillars)</item>
-        <item>Pou-tūā-rangi (Internal Wharenui Post)</item>
-        <item>Pou-tūā-rongo - Tawhaki (Internal Wharenui Post)</item>
-        <item>Tomokanga ( Gateway Entrance)</item>
-        <item>Pare and Whakawae (Doorway Lintels)</item>
-        <item>Kōrupe (Window Lintel)</item>
+        <item>Waka Maumahara </item>
+        <item>Pou Whakarae </item>
+        <item>Pou-tūā-rangi </item>
+        <item>Pou-tūā-rongo - Tawhaki </item>
+        <item>Tomokanga </item>
+        <item>Pare and Whakawae</item>
+        <item>Kōrupe </item>
     </string-array>
 
     <string-array name="content_array">
         <item> </item>
-        <item> <![CDATA[<p>The marae complex takes its name from an area famous for its rich, fertile lands and gardens that linked the network of Waikato sub-tribes (hapū) who lived along the banks of the Waikato River.To learn more about the marae,<a href="https://www.wintec.ac.nz/about-wintec/m%C4%81ori-and-pasifika/wintec-marae"> click here. </a> </p>]]> </item>
-        <item> <![CDATA[<p>Wintec’s marae features an array of carvings, designed and created by Tainui master carver Warren McGrath, Ngāti Raukawa, a former Wintec student.To learn more about the carvings,<a href="https://www.wintec.ac.nz/about-wintec/m%C4%81ori-and-pasifika/wintec-marae/marae-carvings"> click here. </a> </p>]]> </item>
-        <item>On the marae courtyard is 7.5 metre pillar in the form of a waka. \n \n This is the waka maumahara (memorial pillar) which faces Taupiri mountain. At the top of the waka maumahara stands the native kaahu (hawk) representing the Māori Queen Dame Te Ata irangikaahu. \n \n Below this are five niho taniwha, a pattern representing the five Māori kings. \n
-            \n Learning and knowledge are symbolised with manaia and matakupenga patterns through the centre, with the pūhoro design representing the Waikato River. </item>
-        <item>Near the waka maumahara (memorial pillar ) are seven smaller pou whakarae(pillars) which symbolise the star cluster Matariki (Pleiades). \n \n This star cluster is significant to Māori and Tainui culture. </item>
-        <item>The pou-tūā-rangi (internal wharenui post) near the entrance represents Wintec values. \n \n • Mahi tahi - Working together \n \n • Whakaaro whanui - Challenge and innovation \n
-   \n • Manaaki tangata - Customer focus \n \n • Kia Tika - Taking ownership \n \n • Kia tupu, kia hua - Improvement and opportunity \n \n • Whakamana i te tangata - Valuing people \n
-            \n It has been carved in totara from a tree which used to stand on Wintec city campus. Behind the pou-tua-rangi is a tukutuku panel from the original Wintec wharenui, Te Kākano a te Kaahu.</item>
-        <item>Located on the back wall of the wharenui the pou-tūā-rongo is a carving of Tāwhaki who received the baskets of knowledge (ngā kete wānanga). \n \n
-            Tāwhaki is featured looking towards the doorway and the world of light. This was also carved in tōtara from a tree which use to stand on Wintec’s city campus. </item>
-        <item>The entrance designs welcome people from around the world of Wintec. \n \n The sub-tribes (hapū) of this area are shown welcoming visitors onto the marae in a central carving at the entrance. \n \n Mātauranga Māori and part of the creation story according to Tainui are also represented in the carvings.</item>
-        <item>Above the wharenui pare (doorway) are three figures ngā kete wānanga representing the three baskets of knowledge. Part of the creation story of Tainui is also told in the designs. \n \n Manaia and takarangi patterns symbolise growth and development. The textured ngao matariki pattern on the sides of the doorway (whakawae) represents the welcoming of the cultures and peoples of the world. </item>
+        <item> <![CDATA[<p>I ahu mai te ingoa Te Kōpu Mānia o Kirikiriroa i te wāhi e rongonui nei mō te one-mātua me ngā māra kai i honohono, I kōtuitui,  i ngā hapū o Waikato i noho i ngā tahataha o Te Awa o Waikato.
 
-        <item>The taniwha Tuheitia is carved on the window lintel (kōrupe) above the front window of Te Kākano a te Kaahu, along with ngao matariki and manaia designs. Tuheitia holds guardianship of the Waipā river and was regarded with awe and respect. </item>
+Mō ākoranga atu anō mō te marae
+,<a href="https://www.wintec.ac.nz/about-wintec/m%C4%81ori-and-pasifika/wintec-marae"> pato i kōnei
+ </a> </p>]]> </item>
+        <item> <![CDATA[<p>Mo akoranga kee atu mo ngā whakairo
+,<a href="https://www.wintec.ac.nz/about-wintec/m%C4%81ori-and-pasifika/wintec-marae/marae-carvings">pato i kōnei
+ </a> </p>]]> </item>
+        <item>Kei te marae ātea he pou, 7.5 mīta te teitei, e tū ana.  He ōrite tōna āhua ki tō te waka.
+
+E anga atu tenei pou, arā te Waka Maumahara, ki Taupiri Maunga. Kei runga i te waka maumahara, tētahi kaahu e tū ana, he tohu mō Te Arikinui Dame Te Atairangikaahu.
+
+Kei raro iho o tēnei, e whakairohia ana e rima niho taniwha, he tohu mō ngā Kīngi Māori tokorima.
+E whakaaturia ana te ako me te mātauranga e ngā manaia me ngā matakupenga whakairo ki waenganui, me te whakairo pūhoro, he tohu mō te Awa o Waikato.
+
+ </item>
+        <item>Ko ngā pou whakarae e whitu e tata ana ki te waka maumahara e tohu ana I te kāhui whetū a Matariki.
+He tino a Matariki ki te ahurea o Tainui, ki te iwi Māori whānui hoki.
+ </item>
+        <item>Kua whakairohia tēnei ki tētahi rākau tōtara i tū ki runga i te wāhi o Wintec i mua. Ko te tukutuku kei muri i te pou-tūā-rangi i ahu mai i te wharenui o Wintec o mua, arā ko Te Kākano a Te Kaahu.</item>
+        <item>Kei runga i te pakitara o muri o te wharenui te pou-tūā-rongo, te whakairo o Tāwhaki  nāna tiki i ngā kete o te wānanga.
+Ko tana āhua, he tiro atu ki  te tomokanga me Te Ao Mārama.   Kua whakairohia hoki tēnei ki  te tōtara i tū ki te wāhi o Wintec i mua.
+ </item>
+        <item>Ngā hoahoa o te tomokanga he mea pōwhiri i ngā iwi o te ao ki Wintec.
+Ko te whakairo kei waenganui o te tomokanga ka whakaatu i ngā hapū o Tainui e pōwhiri i ngā manuwhiri ki runga i te marae.
+Ka whakaaturia hoki te mātauranga Māori me ngā korero mō te orokohanga o te ao e ai ki Tainui
+</item>
+        <item>Kei runga I te pare e toru ngā tohu o ngā kete wānanga.  Ka whakaaturia hoki ētahi wahanga o te orokohanga o te ao, e ai ki Tainui i roto i ngā hoahoa.
+Ko ngā manaia me ngā takarangi e tohu atu ana i te angitū me te whakawhanaketanga.  Ko te ngao matariki i ngā tahataha o ngā whakawae e tohu ana i te pōwhiri I ngā ahurea, me ngā iwi o te ao.
+ </item>
+
+        <item>Kua whakairohia te taniwhā Tūheitia i te kōrupe, i runga Iite matapihi o mua o Te Kākano a Te Kaahu, me ngā ngao matariki, manaia hoki.
+ </item>
     </string-array>
 </resources>
