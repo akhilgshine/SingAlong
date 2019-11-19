@@ -9,7 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight">
-        <activity android:name=".SingAlong"></activity>
+        <activity android:name=".Song7_Karoke"></activity>
+        <activity android:name=".Song6_Karoke" />
+        <activity android:name=".Song5_Karoke" />
+        <activity android:name=".Song4_Karoke" />
+        <activity android:name=".Song3_Karoke" />
+        <activity android:name=".Song2_Karoke" />
+        <activity android:name=".Song1_Karoke" />
+        <activity android:name=".Song7_SingAlong" />
+        <activity android:name=".Song6_SingAlong" />
+        <activity android:name=".Song5_SingAlong" />
+        <activity android:name=".Song4_SingAlong" />
+        <activity android:name=".Song3_SingAlong" />
+        <activity android:name=".Song2_SingAlong" />
+        <activity android:name=".Song1_SingAlong" />
+        <activity android:name=".SingAlong" />
         <activity android:name=".Karoke" />
         <activity android:name=".Song1" />
         <activity android:name=".SplashScreen">
@@ -21,20 +35,18 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-<!--        <activity-->
-<!--            android:name=".MaraeCarvings"-->
-<!--            android:theme="@style/Theme.AppCompat.NoActionBar" />-->
+            android:theme="@style/Theme.AppCompat.NoActionBar" /> <!-- <activity -->
+        <!-- android:name=".MaraeCarvings" -->
+        <!-- android:theme="@style/Theme.AppCompat.NoActionBar" /> -->
         <activity
             android:name=".MaraeCulture"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".AboutUs"
+        <activity
+            android:name=".AboutUs"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".AppVersion"
+        <activity
+            android:name=".AppVersion"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <!--        <activity-->
-<!--            android:name=".MaraeTemple"-->
-<!--            android:theme="@style/Theme.AppCompat.NoActionBar" />-->
     </application>
 
 </manifest>

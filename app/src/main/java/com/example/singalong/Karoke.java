@@ -28,12 +28,12 @@ public class Karoke extends AppCompatActivity {
         setContentView(R.layout.activity_karoke);
 
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("asdsad");
+        actionBar.setTitle("Songs List");
 
-        title = new String[]{"Northern White Rhino", "Pinta Island Tortoise", "The Golden Toad", "Madeiran Large White", "Falkland Islands Wolf"};
-        description = new String[]{"East and Central Africa", "Ecuador's Pinta Island", "Monteverde, Costa Rica", "Portugal's Madeira Islands", "Falkland Islands"};
-        icon = new int[]{R.drawable.rhino, R.drawable.tortoise, R.drawable.toad, R.drawable.butterfly,
-                R.drawable.wolf};
+        title = new String[]{"E Kore Koe E Ngaro", "He Maimai Aroha Nā Tāwhiao", "Waikato Te Awa", "Tutira Mai Nga Iwi", "Pupuke Te Hihiri", "Pua Te Kowhai", "I Te Whare Whakapiri"};
+        description = new String[]{"Written by Te Iti Kahurangi", "Kingi Tāwhiao", "Rivers journey", "Written by Wī Huata ", "Written by Nganehu Turner", "Yellow flowers of the Kowhai tree ", "loss of identity and culture of a person"};
+        icon = new int[]{R.drawable.song1_image, R.drawable.song2_iamge, R.drawable.song3_image, R.drawable.song4_image,
+                R.drawable.song5_image, R.drawable.song6_image, R.drawable.song7_image};
 
         listView = findViewById(R.id.listView);
 

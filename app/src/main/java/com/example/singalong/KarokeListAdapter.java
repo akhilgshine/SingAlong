@@ -79,41 +79,50 @@ public class KarokeListAdapter extends BaseAdapter {
                                     @Override
                                     public void onClick(View view){
 
-                                        if(modelList.get(position).getTitle().equals("Northern White Rhino")){
+                                        if(modelList.get(position).getTitle().equals("E Kore Koe E Ngaro")){
                                             //Start New Actitivty with title matching
-                                            Intent intent = new Intent(mContext, Song1.class);
-                                            intent.putExtra("actionBarTitle", "Northern White Rhino");
-                                            intent.putExtra("contentTv", "This is Rhino Detail");
+                                            Intent intent = new Intent(mContext, Song1_Karoke.class);
+                                            intent.putExtra("actionBarTitle", "E Kore Koe E Ngaro");
                                             mContext.startActivity(intent);
                                         }
-//                                        if(modelList.get(position).getTitle().equals("Pinta Island Tortoise")){
-//                                            //Start New Actitivty with title matchingT
-//                                            Intent intent = new Intent(mContext, Tortoise.class);
-//                                            intent.putExtra("actionBarTitle", "Pinta Island Tortoise");
-//                                            intent.putExtra("contentTv", "This is Tortoise Detail");
-//                                            mContext.startActivity(intent);
-//                                        }
-//                                        if(modelList.get(position).getTitle().equals("The Golden Toad")){
-//                                            //Start New Actitivty with title matching
-//                                            Intent intent = new Intent(mContext, Toad.class);
-//                                            intent.putExtra("actionBarTitle", "The Golden Toad");
-//                                            intent.putExtra("contentTv", "This is Toad Detail");
-//                                            mContext.startActivity(intent);
-//                                        }
-//                                        if(modelList.get(position).getTitle().equals("Madeiran Large White")){
-//                                            //Start New Actitivty with title matching
-//                                            Intent intent = new Intent(mContext, Butterfly.class);
-//                                            intent.putExtra("actionBarTitle", "Madeiran Large White");
-//                                            intent.putExtra("contentTv", "This is Butterfly Detail");
-//                                            mContext.startActivity(intent);
-//                                        }
-//                                        if(modelList.get(position).getTitle().equals("Falkland Islands Wolf")){
-//                                            //Start New Actitivty with title matching
-//                                            Intent intent = new Intent(mContext, Wolf.class);
-//                                            intent.putExtra("actionBarTitle", "Falkland Islands Wolf");
-//                                            intent.putExtra("contentTv", "This is Wolf Detail");
-//                                            mContext.startActivity(intent);
-//                                        }
+                                        if(modelList.get(position).getTitle().equals("He Maimai Aroha Nā Tāwhiao")){
+                                            //Start New Actitivty with title matchingT
+                                            Intent intent = new Intent(mContext, Song2_Karoke.class);
+                                            intent.putExtra("actionBarTitle", "He Maimai Aroha Nā Tāwhiao");
+                                            mContext.startActivity(intent);
+                                        }
+                                        if(modelList.get(position).getTitle().equals("Waikato Te Awa")){
+                                            //Start New Actitivty with title matching
+                                            Intent intent = new Intent(mContext, Song3_Karoke.class);
+                                            intent.putExtra("actionBarTitle", "Waikato Te Awa");
+                                            mContext.startActivity(intent);
+                                        }
+                                        if(modelList.get(position).getTitle().equals("Tutira Mai Nga Iwi")){
+                                            //Start New Actitivty with title matching
+                                            Intent intent = new Intent(mContext, Song4_Karoke.class);
+                                            intent.putExtra("actionBarTitle", "Tutira Mai Nga Iwi");
+                                            mContext.startActivity(intent);
+                                        }
+                                        if(modelList.get(position).getTitle().equals("Pupuke Te Hihiri")){
+                                            //Start New Actitivty with title matching
+                                            Intent intent = new Intent(mContext, Song5_Karoke.class);
+                                            intent.putExtra("actionBarTitle", "Pupuke Te Hihiri");
+                                            mContext.startActivity(intent);
+                                        }
+
+                                        if(modelList.get(position).getTitle().equals("Pua Te Kowhai")){
+                                            //Start New Actitivty with title matching
+                                            Intent intent = new Intent(mContext, Song6_Karoke.class);
+                                            intent.putExtra("actionBarTitle", "Pua Te Kowhai");
+                                            mContext.startActivity(intent);
+                                        }
+
+                                        if(modelList.get(position).getTitle().equals("I Te Whare Whakapiri")){
+                                            //Start New Actitivty with title matching
+                                            Intent intent = new Intent(mContext, Song7_Karoke.class);
+                                            intent.putExtra("actionBarTitle", "I Te Whare Whakapiri");
+                                            mContext.startActivity(intent);
+                                        }
 
                                     }
 
