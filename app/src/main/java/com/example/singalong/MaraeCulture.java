@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.Html;
 import android.text.Spanned;
 import android.text.method.LinkMovementMethod;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MaraeCulture extends AppCompatActivity {
     TextView Title,Content;
     String titleText,contentText,pos;
+    ImageView maraeImage;
+    int DrawableId;
 
 
     @Override
@@ -26,6 +29,14 @@ public class MaraeCulture extends AppCompatActivity {
         pos=getIntent().getStringExtra("position");
 
         Title.setText(titleText);
+        maraeImage=findViewById(R.id.maraeImage);
+        titleText=getIntent().getStringExtra("title");
+        contentText=getIntent().getStringExtra("content");
+        DrawableId=getIntent().getIntExtra("image",0);
+        pos=getIntent().getStringExtra("position");
+
+        Title.setText(titleText);
+        maraeImage.setImageResource(DrawableId);
         if(pos.equals("1")||pos.equals("2"))
         {
             Spanned result;

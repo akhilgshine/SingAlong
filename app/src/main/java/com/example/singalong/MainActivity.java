@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     boolean togselected=false;
     String titleArray[]={};
     String contentsArray[]={};
+    int imageArray[]={R.drawable.akhil,R.drawable.maraeimage,R.drawable.maraeimage,R.drawable.memorial_pillar,R.drawable.pillars,R.drawable.internal,R.drawable.internal_wharenui,R.drawable.gateway_entrance,R.drawable.doorway_lintels,R.drawable.window_lintels};
     boolean openClose=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -246,6 +247,7 @@ public class MainActivity extends AppCompatActivity {
                         nextScreen.putExtra("title",titleArray[pos]);
                         nextScreen.putExtra("content",contentsArray[pos]);
                         nextScreen.putExtra("position",String.valueOf(pos));
+                        nextScreen.putExtra("image",imageArray[pos]);
                         startActivity(nextScreen);
                     }
 

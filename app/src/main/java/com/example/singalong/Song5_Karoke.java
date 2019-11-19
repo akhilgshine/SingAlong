@@ -13,8 +13,8 @@ public class Song5_Karoke extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_song5__karoke);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("Pupuke Te Hihiri");
+//        ActionBar actionBar = getSupportActionBar();
+//        actionBar.setTitle("Pupuke Te Hihiri");
 
         VideoView videoView = (VideoView) findViewById(R.id.videoView);
 

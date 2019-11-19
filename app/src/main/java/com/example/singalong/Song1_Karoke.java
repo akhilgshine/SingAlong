@@ -14,8 +14,8 @@ public class Song1_Karoke extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_song1__karoke);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("E Kore Koe E Ngaro");
+//        ActionBar actionBar = getSupportActionBar();
+//        actionBar.setTitle("E Kore Koe E Ngaro");
 
         VideoView videoView = (VideoView) findViewById(R.id.videoView);
 

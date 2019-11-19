@@ -14,8 +14,8 @@ public class Song3_Karoke extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_song3__karoke);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("Waikato Te Awa");
+//        ActionBar actionBar = getSupportActionBar();
+//        actionBar.setTitle("Waikato Te Awa");
 
         VideoView videoView = (VideoView) findViewById(R.id.videoView);
 

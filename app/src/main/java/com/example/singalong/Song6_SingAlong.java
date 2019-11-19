@@ -13,8 +13,8 @@ public class Song6_SingAlong extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_song6__sing_along);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("Pua Te Kowhai");
+//        ActionBar actionBar = getSupportActionBar();
+//        actionBar.setTitle("Pua Te Kowhai");
 
         VideoView videoView = (VideoView) findViewById(R.id.videoView);
 

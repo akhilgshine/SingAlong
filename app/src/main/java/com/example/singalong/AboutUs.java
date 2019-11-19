@@ -18,7 +18,8 @@ public class AboutUs extends AppCompatActivity {
     LinearLayout listView;
     String[] name={"Akhil Geetha Shine","Amarender Mominpet","Callum Gott","Kyle Jameson","Maria Susainathan Dominic Maria Joseph","Teniel Nieuwoudt"};
     String[] roleofperson={"App Programmer","Documentation Specialist","Team Leader\n" + "Audio Editor","Media Expert","App Programmer","Lead Designer"};
-    int[] images={R.drawable.akhil,R.drawable.akhil,R.drawable.akhil,R.drawable.akhil,R.drawable.maria,R.drawable.akhil};
+
+    int[] images={R.drawable.akhil,R.drawable.amarendar,R.drawable.callum,R.drawable.kyle,R.drawable.susai,R.drawable.teniel};
     LayoutInflater inflater;
 
 

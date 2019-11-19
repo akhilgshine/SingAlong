@@ -15,8 +15,8 @@ public class Song3_SingAlong extends AppCompatActivity {
         setContentView(R.layout.activity_song3__sing_along);
 
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("Waikato Te Awa");
+//        ActionBar actionBar = getSupportActionBar();
+//        actionBar.setTitle("Waikato Te Awa");
 
         VideoView videoView = (VideoView) findViewById(R.id.videoView);
 
